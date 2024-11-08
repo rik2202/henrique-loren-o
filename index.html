@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origem de Futebol</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Blog de Futebol</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="openTab(event, 'Times')">Times</a>
+        <a href="#" onclick="openTab(event, 'Competicoes')">Competições</a>
+        <a href="#" onclick="openTab(event, 'Origem')">Origem do Futebol</a>
+    </nav>
+
+    <div class="container">
+        <!-- Integrantes -->
+        <div id="Integrantes" class="content active">
+            <h2>Integrantes</h2>
+            <p> henrique lorenço<br>
+                Leonardo Massimo</p>
+            <button class="btn">Leia Mais</button>
+        </div>
+
+        <!-- Times -->
+        <div id="Times" class="content">
+            <h2>Times de Futebol</h2>
+            <img src="img/brasileirao_serie_a_2024_clubes_participantes_700_1.jpg"
+            <p>Os times da Série A do Campeonato Brasileiro podem mudar de uma temporada para outra devido ao sistema de
+                acesso e rebaixamento. No entanto, aqui está uma lista dos times que participaram da Série A na
+                temporada 2023:
+
+                <br>Athletico Paranaense
+                <br>Atlético Mineiro
+                <br>Atlético Goianiense
+                <br>Botafogo
+                <br>Ceará
+                <br>Corinthians
+                <br>Coritiba
+                <br>Cruzeiro
+                <br>Flamengo
+                <br>Fluminense
+                <br>Fortaleza
+                <br>Goiás
+                <br>Grêmio
+                <br>Internacional
+                <br>Palmeiras
+                <br>Santos
+                <br>São Paulo
+                <br>Red Bull Bragantino
+                <br>Vasco da Gama
+                <br>Bahia.
+            </p>
+            <button class="btn">Veja Mais</button>
+        </div>
+
+        <!-- Jogadores -->
+        <div id="jogadores" class="content">
+            <h2>Jogadores em Destaque</h2>
+            <img src="jogadores.jpg" alt="Imagem de jogadores">
+            <p>Veja os jogadores que estão se destacando no cenário mundial.</p>
+            <button class="btn">Saiba Mais</button>
+        </div>
+
+        <!-- Competições -->
+        <div id="Competicoes" class="content">
+            <h2>Competições Importantes</h2>
+
+            <p>Os times da Série A do Campeonato Brasileiro, também conhecidos como Brasileirão, participam de várias
+                competições ao longo da temporada. Aqui está um resumo das principais:
+
+                <br>1. Campeonato Brasileiro Série A: É a competição principal onde os clubes competem para se sagrar
+                campeões nacionais. Consiste em um torneio de pontos corridos, onde cada equipe joga contra todas as
+                outras duas vezes, uma em casa e outra fora. O time com mais pontos no final da temporada é declarado
+                campeão.
+
+                <br>2. Copa do Brasil: Uma competição de eliminação direta que envolve clubes de diferentes divisões do
+                futebol brasileiro. As equipes da Série A entram nas fases mais avançadas e competem em partidas de ida
+                e volta até a final, que também é decidida em dois jogos. O vencedor ganha uma vaga na Taça
+                Libertadores.
+
+                <br>3. Taça Libertadores: Principal competição de clubes da América do Sul. Os times da Série A que se
+                classificam (geralmente os primeiros colocados da Série A, além dos vencedores da Copa do Brasil e
+                outras competições nacionais) competem em um torneio continental que inclui fases de grupos e mata-mata.
+
+                <br>4. Copa Sul-Americana: Considerada a segunda competição de clubes mais importante da América do Sul.
+                As equipes que não se classificam para a Libertadores, mas que têm boas campanhas no Brasileirão, podem
+                disputar esta competição. Funciona de forma semelhante à Libertadores, com fases de grupos e mata-mata.
+
+                <br>5. Supercopa do Brasil: Um torneio que reúne o campeão do Campeonato Brasileiro e o vencedor da Copa
+                do Brasil do ano anterior. É uma competição anual que decide o supercampeão do futebol brasileiro.
+
+                Essas competições proporcionam aos clubes da Série A uma variedade de desafios e oportunidades de
+                sucesso tanto nacional quanto internacional.
+            </p>
+            <button class="btn">Ver Detalhes</button>
+        </div>
+
+        <!-- Origem -->
+        <div id="Origem" class="content">
+            <img src="img/futebol-inglaterra.webp"
+            <h2>A Origem do Futebol</h2>
+        <p>O futebol tem origens antigas e diversas, mas a versão moderna do
+            esporte como conhecemos hoje começou a se formar na Inglaterra durante o século XIX. A prática de chutar uma
+            bola com os pés já era comum em várias culturas antigas, como os egípcios, chineses e romanos. No entanto,
+            essas versões eram bastante diferentes do futebol contemporâneo.<br>
+
+            Na Inglaterra, diversas formas de futebol eram jogadas em escolas e universidades, mas sem regras uniformes.
+            Em 1863, foi fundada a Football Association (FA), que estabeleceu as primeiras regras padronizadas do jogo,
+            conhecidas como "Regras da FA". Essas regras diferenciavam o futebol do rugby, outro esporte popular na
+            época, e ajudaram a formalizar o futebol como um esporte distinto. <br>
+
+            A partir da Inglaterra, o futebol se espalhou para outras partes do mundo, sendo popularizado em diversos
+            países ao longo dos anos. A criação da FIFA em 1904 e a realização da primeira Copa do Mundo em 1930
+            marcaram momentos importantes na história global do futebol, solidificando sua popularidade e sua
+            importância no cenário esportivo internacional.</p>
+            <button class="btn">Explore</button>
+        </div>
+
+        <!-- Contato -->
+        <div id="contato" class="content">
+            <h2>Contato</h2>
+            <p>Envie suas perguntas e sugestões através do formulário abaixo.</p>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Mensagem:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Blog de Futebol. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function openTab(event, tabName) {
+            var i, content, navlinks;
+
+            content = document.getElementsByClassName("content");
+            for (i = 0; i < content.length; i++) {
+                content[i].style.display = "none";
+            }
+
+            navlinks = document.getElementsByTagName("a");
+            for (i = 0; i < navlinks.length; i++) {
+                navlinks[i].classList.remove("active");
+            }
+
+            document.getElementById(tabName).style.display = "block";
+            event.currentTarget.classList.add("active");
+        }
+
+        document.getElementById("noticias").style.display = "block";
+    </script>
+
+</body>
+
+</html>
